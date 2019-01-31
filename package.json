@@ -2,17 +2,21 @@
   "name": "resolve-github",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -t 30s",
-    "coverage": "nyc --reporter=html --reporter=text mocha --recursive test/ -t 30s",
+    "test": "mocha -t 10s",
+    "coverage": "nyc --reporter=html --reporter=text mocha --recursive test/ -t 10s",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "release": "rm -rf package-lock.json && npm version minor && npm publish",
     "patch": "rm -rf package-lock.json && npm version patch && npm publish"
   },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/alincode/resolve-github.git"
+    },
   "keywords": [],
   "author": "alincode <alincode@gmail.com>",
   "license": "MIT",
