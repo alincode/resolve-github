@@ -19,5 +19,10 @@ const path = 'https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/ma
 let content = await github.parser(path);
 ```
 
+## release change log
+
+* 0.2.0
+  * support symbolic link
+
 ## License
 MIT © [alincode](https://github.com/alincode/resolve-github)
